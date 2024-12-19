@@ -20,11 +20,13 @@
                         <select name="kategori" id="kategori"
                         class="form-control">
                            <option value="">-- Pilih Kategori --</option>
+                           <option value="">Romance</option>
+                           <option value="">Action</option>
+                           <option value="">Fantasi</option>
                     </select>
                     </div>
                     <div class="mb-3">
-                        <input type="text" name="pengarang"
-                        class="form-control">
+                        <input type="text" name="pengarang" id="pengarang" placeholder="Pengarang" class="form-control">
                     </div>
                     <div class="mb-3">
                         <button class="btn btn-primary">Cari</button>

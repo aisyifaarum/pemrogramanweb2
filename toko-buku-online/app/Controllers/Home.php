@@ -8,20 +8,25 @@ class Home extends BaseController
     {
         return view('home');
     }
-
-    public function chart(){
+    public function chart()
+    {
         return view('chart');
     }
-
-    public function checkout(){
+    public function checkout()
+    {
         return view('checkout');
     }
-
-    public function search(){
+    
+    public function search()
+    {
         return view('search');
     }
 
-    public function submit(){
+    public function submit()
+    {
         return view('submit');
+    }
+    public function image($file){
+        return $this->response->download(WRITEPATH . 'uploads/images/' . $file, null);
     }
 }
